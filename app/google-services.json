@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "976098676306",
+    "firebase_url": "https://socialappshare-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "socialappshare",
+    "storage_bucket": "socialappshare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976098676306:android:4ea4fb5e28a9721219998b",
+        "android_client_info": {
+          "package_name": "com.example.socialapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976098676306-lerorl13kt5c84dv21vlkvrfb8m0brcp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.socialapp",
+            "certificate_hash": "b3f5bf77d59e1765fc4fd148818a374d4949be8d"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOnxeN3pTerrK2HzKElrQ54lR143ajl6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

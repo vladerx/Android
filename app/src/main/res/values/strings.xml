@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SocialApp</string>
+    <string name="default_notification_channel_id">10</string>
+</resources>

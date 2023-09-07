@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/social"
+        android:label="Task Manager"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".NicknameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagercpActivity"
+            android:exported="false"
+            android:label="Control Panel"
+            android:parentActivityName=".PostActivity"
+            android:theme="@style/Theme.Material3.Light" />
+        <activity
+            android:name=".AdmincpActivity"
+            android:exported="true"
+            android:label="Control Panel"
+            android:parentActivityName=".TopicActivity"
+            android:theme="@style/Theme.Material3.Light" />
+        <activity
+            android:name=".MessageActivity"
+            android:exported="false"
+            android:label="Conversation"
+            android:parentActivityName=".PostActivity"
+            android:theme="@style/Theme.Material3.Light" />
+        <activity
+            android:name=".PostActivity"
+            android:exported="false"
+            android:label="Tasks"
+            android:parentActivityName=".TopicActivity"
+            android:theme="@style/Theme.Material3.Light" />
+        <activity
+            android:name=".AddTopicActivity"
+            android:exported="false"
+            android:label="Add Group"
+            android:parentActivityName=".TopicActivity"
+            android:theme="@style/Theme.Material3.Light" />
+        <activity
+            android:name=".TopicActivity"
+            android:exported="false"
+            android:label="Groups"
+            android:theme="@style/Theme.Material3.Light" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false"
+            android:label="Registration"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.Material3.Light" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MainActivity$MessagingServices"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/social" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/white" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>

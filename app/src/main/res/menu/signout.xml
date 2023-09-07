@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/admincp_item"
+        android:icon="@drawable/admin_panel"
+        android:title="admincp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/add_topic_item"
+        android:icon="@drawable/add_topic"
+        android:title="Add Topic"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/sign_out_item"
+        android:icon="@drawable/logout_image"
+        android:title="Sign Out"
+        app:showAsAction="always" />
+</menu>
